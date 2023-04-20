@@ -1,0 +1,101 @@
+.ghMain{
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+-moz-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+}
+
+.fltrGh{
+    display: flex;
+    font-size: .9em;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.gnTitle{
+    font-weight: 600;
+    text-align: center;
+}
+
+select{
+    border: none;
+    background-color: rgb(207, 207, 207);
+    padding: 4px;
+    border-radius: 5px;
+    color: rgb(58, 58, 58);
+}
+
+select:focus{
+    outline: none;
+}
+
+option{
+    border: none;
+  
+    outline: none;
+}
+
+.ghFm{
+    height: 230px;
+}
+
+@media screen and (max-width: 580px){
+   
+    .ghMain{
+       width: 330px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 580px){
+    .wdMap{
+        width: 330px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .weekGh{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ldGh{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fltrGh{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .fltBtn{
+        width: 90px;
+        height: 35px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,173 @@
+
+
+.inTitle form{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.pfMain{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 480px;
+   min-height: 220px;
+    -webkit-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+-moz-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+}
+
+.thCell{
+    font-size: 1em;
+    background-color: rgb(142, 17, 138);
+    padding: 4px;
+    text-align: center;
+    width: 60px;
+    color: rgb(255, 255, 255);
+    text-overflow: ellipsis;
+        overflow: hidden;
+    
+}
+
+.tdCell{
+    font-size: .9em;
+    background-color: rgb(236, 236, 236);
+    padding: 4px;
+    text-align: center;
+
+}
+
+.thpf .thCell{
+    background-color: cadetblue;
+}
+
+.rncd{
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+       font-weight: 600;
+}
+
+.emlInp{
+    border: none;
+    background-color: rgb(227, 227, 227);
+    border-radius: 5px;
+    height: 24px;
+  
+}
+
+.rankNm{
+    background-color: rgb(88, 44, 176);
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.inp{
+    display: flex;
+    justify-content: space-around;
+}
+
+.emlInp:focus{
+ outline: none;
+ 
+}
+
+.emlBtn{
+    border: none;
+    background-color: rgb(79, 161, 79);
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 40px;
+    transition: all .1s ease-in-out;
+}
+
+.emlBtn:active{
+    transform: scale(.94);
+    background-color: rgb(43, 105, 43);
+}
+
+.emlBtn:hover{
+    cursor: pointer;
+    background-color: rgb(49, 128, 49);
+
+}
+
+.pfTitle{
+    
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.errN{
+    font-size: .8em;
+    color: rgb(175, 17, 17);
+    font-weight: 600;
+}
+
+.frm{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.591);
+    width: 250px;
+    height: 88px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); 
+}
+
+.wlcm{
+   
+    margin-bottom: 4px;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width: 580px){
+    .pfMain{
+        width: 320px;
+       min-height: 100px;
+    }
+
+    .rncd{
+        width: 84%;
+        padding-left: 25px;
+    }
+
+    .tdCell{
+        font-size: .8em;
+        width: 30px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+    .thCell{
+        font-size: .8em;
+        width: 35px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .thpfr{
+        display: flex;
+        justify-content: center;
+    }
+}

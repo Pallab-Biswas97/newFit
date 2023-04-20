@@ -1,0 +1,151 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mid{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(228, 228, 228, .1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.card{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+-moz-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+}
+
+.card .title{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: .9em;
+    color: rgb(113, 113, 113);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.card .textC{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.btm{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.pfCd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbl{
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.fltrGh{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fltBtn{
+    border: none;
+    background-color: rgb(79, 109, 161);
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+   
+    transition: all .1s ease-in-out;
+}
+
+.fltBtn:active{
+    transform: scale(.94);
+    background-color: rgb(43, 60, 105);
+}
+
+.fltBtn:hover{
+    cursor: pointer;
+    background-color: rgb(49, 62, 128);
+
+}
+
+@media screen and (max-width: 580px){
+    .top{
+        display: flex;
+        flex-direction: column;
+        position:relative;
+       align-items: center;
+        background-color: rgba(228, 228, 228, 0);
+        -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+        
+    }
+    .mid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 320px;
+    }
+  
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 580px){
+    .wdMap{
+        width: 350px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+} 

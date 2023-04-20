@@ -1,0 +1,36 @@
+.wdMap{
+  
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 5px;
+    padding-bottom: 1px;
+    -webkit-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+-moz-box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+box-shadow: -3px 4px 13px -8px rgba(0,0,0,0.28);
+   
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 580px){
+    .wdMap{
+        width: 340px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+.locTitle{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: -7.5px;
+    font-weight: 600;
+    
+}
